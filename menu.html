@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full menu for My Cafe including Espresso, Cappuccino, Latte, Milk Tea, Green Tea, Black Tea, cold drinks, specialty beverages, and bakery items.">
+    <title>Menu & Prices | My Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo" aria-label="My Cafe Home">
+                <span>&#9749; My Cafe<span class="brand-sub">Artisan Coffee &amp; Tea House</span></span>
+            </a>
+            <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">&#9776; Menu</button>
+            <nav aria-label="Primary Navigation">
+                <ul id="navMenu" class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active" aria-current="page">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coffee.html">Coffee Guide</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero-subpage">
+            <div class="container">
+                <span class="badge-pill">Complete Food &amp; Beverage Menu</span>
+                <h1>Crafted Drinks &amp; Fresh Bakery</h1>
+                <p>Explore our preserved Lab 11 original menu items alongside illustrative specialty beverages, cold drinks, and freshly baked accompaniments.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="notice-box">
+                    <strong>Menu Pricing Transparency:</strong> Items marked with <span class="orig-badge">Original Lab 11</span> retain exact prices from our original project (Espresso Rs. 250, Cappuccino Rs. 350, Latte Rs. 300, Milk Tea Rs. 150, Green Tea Rs. 180, Black Tea Rs. 120). All additional menu items carry clearly labeled illustrative sample prices in Pakistani Rupees (Rs.).
+                </div>
+
+                <div class="controls-bar" aria-label="Menu Filter and Search Controls">
+                    <div class="filter-buttons" role="group" aria-label="Filter menu by category">
+                        <button type="button" class="filter-btn js-menu-filter active" data-filter="all">All Categories</button>
+                        <button type="button" class="filter-btn js-menu-filter" data-filter="coffee">Coffee</button>
+                        <button type="button" class="filter-btn js-menu-filter" data-filter="tea">Tea</button>
+                        <button type="button" class="filter-btn js-menu-filter" data-filter="cold">Cold Drinks</button>
+                        <button type="button" class="filter-btn js-menu-filter" data-filter="specialty">Specialty Beverages</button>
+                        <button type="button" class="filter-btn js-menu-filter" data-filter="bakery">Bakery &amp; Desserts</button>
+                    </div>
+                    <div class="search-box-wrap">
+                        <label for="menuSearch" class="skip-link">Search menu items</label>
+                        <input type="search" id="menuSearch" class="search-input" placeholder="Search by drink, ingredient, or flavor (e.g., Espresso, Cardamom, Croissant)...">
+                    </div>
+                </div>
+
+                <div id="menuNoResults" class="notice-box" style="display: none; text-align: center;">
+                    <strong>No matching menu items found.</strong> Try clearing your search term or selecting "All Categories".
+                </div>
+
+                <div class="menu-category-section" data-category="coffee">
+                    <h2>1. Classic &amp; Artisan Coffee</h2>
+                    <p>Pulled on our commercial espresso machine using freshly ground medium-dark roast beans.</p>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 26%;">Item Name</th>
+                                    <th style="width: 56%;">Description &amp; Preparation</th>
+                                    <th style="width: 18%;">Price (PKR)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="menu-item-row">
+                                    <td><strong>Espresso</strong> <span class="orig-badge">Original Lab 11</span></td>
+                                    <td>Single concentrated 30ml shot extracted at 9 bars with rich golden crema and dark chocolate undertones.</td>
+                                    <td><strong>Rs. 250</strong></td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Cappuccino</strong> <span class="orig-badge">Original Lab 11</span></td>
+                                    <td>Classic Italian balance of rich espresso, steamed whole milk, and thick velvety microfoam.</td>
+                                    <td><strong>Rs. 350</strong></td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Latte</strong> <span class="orig-badge">Original Lab 11</span></td>
+                                    <td>Smooth espresso shot folded into generous steamed milk with a thin, silky microfoam finish.</td>
+                                    <td><strong>Rs. 300</strong></td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Americano</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Double shot of espresso lengthened with hot filtered water for a clean, aromatic black coffee cup.</td>
+                                    <td>Rs. 280</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Flat White</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Double ristretto base topped with thin, glossy steamed microfoam for a stronger coffee-forward profile.</td>
+                                    <td>Rs. 360</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Cafe Mocha</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Espresso blended with dark cocoa ganache, steamed milk, and light foam dusting.</td>
+                                    <td>Rs. 390</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="menu-category-section" data-category="tea">
+                    <h2>2. Traditional &amp; Loose-Leaf Tea</h2>
+                    <p>Steeped to exact temperatures to honor both everyday local favorites and delicate loose-leaf blends.</p>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 26%;">Item Name</th>
+                                    <th style="width: 56%;">Description &amp; Preparation</th>
+                                    <th style="width: 18%;">Price (PKR)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="menu-item-row">
+                                    <td><strong>Milk Tea</strong> <span class="orig-badge">Original Lab 11</span></td>
+                                    <td>Full-bodied black tea leaves simmered with fresh dairy milk for a comforting, creamy daily cup.</td>
+                                    <td><strong>Rs. 150</strong></td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Green Tea</strong> <span class="orig-badge">Original Lab 11</span></td>
+                                    <td>Whole-leaf green tea steeped gently at 80&deg;C for a clean, refreshing, antioxidant-rich brew.</td>
+                                    <td><strong>Rs. 180</strong></td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Black Tea</strong> <span class="orig-badge">Original Lab 11</span></td>
+                                    <td>Crisp, bright orthodox black tea brewed without milk; served with optional lemon wedge or honey.</td>
+                                    <td><strong>Rs. 120</strong></td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Cardamom Karak Chai</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Slow-brewed strong Assam tea infused with crushed green cardamom pods and evaporated milk.</td>
+                                    <td>Rs. 180</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Kashmiri Pink Tea</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Traditional brewed green tea leaves aerated to a rose blush and garnished with crushed pistachios.</td>
+                                    <td>Rs. 240</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="menu-category-section" data-category="cold">
+                    <h2>3. Cold Drinks &amp; Iced Refreshers</h2>
+                    <p>Chilled over crystal ice for warm afternoons and refreshing study breaks. (All prices below are illustrative sample prices.)</p>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 26%;">Item Name</th>
+                                    <th style="width: 56%;">Description &amp; Preparation</th>
+                                    <th style="width: 18%;">Price (PKR)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="menu-item-row">
+                                    <td><strong>Iced Caffe Latte</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Freshly pulled espresso poured over cold milk and ice cubes for a crisp, creamy finish.</td>
+                                    <td>Rs. 340</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>18-Hour Cold Brew</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Coarse-ground single-origin coffee steeped cold for 18 hours, yielding low acidity and chocolate notes.</td>
+                                    <td>Rs. 350</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Peach &amp; Mint Iced Tea</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Chilled black tea shaken with natural peach nectar, fresh mint leaves, and a splash of citrus.</td>
+                                    <td>Rs. 260</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Iced Caramel Macchiato</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Cold milk layered with vanilla syrup, espresso shots, and a lattice drizzle of golden caramel.</td>
+                                    <td>Rs. 410</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Fresh Mint Lemonade</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Hand-squeezed lemon juice blended with garden mint leaves, chilled water, and crushed ice.</td>
+                                    <td>Rs. 220</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="menu-category-section" data-category="specialty">
+                    <h2>4. Specialty Signature Beverages</h2>
+                    <p>House-crafted drinks combining botanicals, spices, and manual brewing techniques. (Illustrative sample prices.)</p>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 26%;">Item Name</th>
+                                    <th style="width: 56%;">Description &amp; Preparation</th>
+                                    <th style="width: 18%;">Price (PKR)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="menu-item-row">
+                                    <td><strong>V60 Hand-Poured Filter</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Single-origin light-medium roast brewed manually through a Hario V60 cone for bright floral clarity.</td>
+                                    <td>Rs. 420</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Honey Cinnamon Cortado</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Equal parts espresso and warm silky milk sweetened with raw wildflower honey and Ceylon cinnamon.</td>
+                                    <td>Rs. 370</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Ceremonial Matcha Latte</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Stone-ground Japanese green tea whisked with bamboo chasen and folded into steamed milk.</td>
+                                    <td>Rs. 450</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Belgian Spiced Hot Chocolate</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Melted 70% dark chocolate whisked into steamed milk with a hint of nutmeg and vanilla bean.</td>
+                                    <td>Rs. 380</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="menu-category-section" data-category="bakery">
+                    <h2>5. Bakery &amp; Desserts</h2>
+                    <p>Baked fresh each morning to complement our coffee and tea selection. (Illustrative sample prices.)</p>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 26%;">Item Name</th>
+                                    <th style="width: 56%;">Description &amp; Preparation</th>
+                                    <th style="width: 18%;">Price (PKR)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="menu-item-row">
+                                    <td><strong>Classic Butter Croissant</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>27-layer laminated French pastry baked golden brown with a crisp flaky crust and tender crumb.</td>
+                                    <td>Rs. 220</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Fudge Walnut Brownie</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Dense dark-chocolate square studded with toasted walnuts and served slightly warm.</td>
+                                    <td>Rs. 260</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Honey Almond Pound Cake</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Moist butter loaf slice glazed with wildflower honey and topped with roasted almond flakes.</td>
+                                    <td>Rs. 280</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Cinnamon Raisin Roll</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Soft brioche swirl layered with brown sugar, aromatic cinnamon, and light vanilla bean icing.</td>
+                                    <td>Rs. 250</td>
+                                </tr>
+                                <tr class="menu-item-row">
+                                    <td><strong>Classic New York Cheesecake</strong> <small>(Illustrative Sample)</small></td>
+                                    <td>Creamy baked vanilla cheesecake over a crisp digestive biscuit base.</td>
+                                    <td>Rs. 390</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>&#9749; My Cafe</h3>
+                <p>Warmth in every cup. Built upon our original Lab 11 foundation with classic beige, brown, and dark green heritage styling.</p>
+                <button type="button" class="btn-green js-welcome-alert">Cafe Greeting</button>
+            </div>
+            <div>
+                <h3>Explore Pages</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Full Menu &amp; Prices</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                    <li><a href="about.html">About &amp; Brand Story</a></li>
+                    <li><a href="coffee.html">Coffee Craft &amp; Guide</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Visit &amp; Community</h3>
+                <ul>
+                    <li><a href="experience.html">Cafe Experience</a></li>
+                    <li><a href="events.html">Sample Workshops &amp; Events</a></li>
+                    <li><a href="reservation.html">Table Reservations</a></li>
+                    <li><a href="contact.html">Contact &amp; Hours</a></li>
+                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Academic Project Info</h3>
+                <p><strong>Student:</strong> Anas Shahid</p>
+                <p><strong>Roll No:</strong> 26i-3113 | <strong>Section:</strong> E</p>
+                <p><strong>Course Lab 12:</strong> Git, GitHub, Vibe Coding &amp; Deployment</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 My Cafe — Academic Web Project by Anas Shahid (26i-3113, Section E). All sample prices, events, and testimonials are clearly labeled as illustrative.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

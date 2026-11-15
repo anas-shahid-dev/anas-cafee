@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore photos of My Cafe beverages, fresh bakery items, and cozy seating areas with interactive lightbox viewing.">
+    <title>Photo Gallery | My Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo" aria-label="My Cafe Home">
+                <span>&#9749; My Cafe<span class="brand-sub">Artisan Coffee &amp; Tea House</span></span>
+            </a>
+            <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">&#9776; Menu</button>
+            <nav aria-label="Primary Navigation">
+                <ul id="navMenu" class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coffee.html">Coffee Guide</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero-subpage">
+            <div class="container">
+                <span class="badge-pill">Visual Tour &amp; Food Showcase</span>
+                <h1>My Cafe Photo Gallery</h1>
+                <p>Click any photograph below to inspect it in full-screen lightbox view, or filter by coffee, tea, bakery treats, and cafe atmosphere.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="filter-buttons" role="group" aria-label="Filter gallery images">
+                    <button type="button" class="filter-btn js-gallery-filter active" data-filter="all">All Photos (9)</button>
+                    <button type="button" class="filter-btn js-gallery-filter" data-filter="coffee">Coffee &amp; Espresso</button>
+                    <button type="button" class="filter-btn js-gallery-filter" data-filter="tea">Tea &amp; Cold Brews</button>
+                    <button type="button" class="filter-btn js-gallery-filter" data-filter="bakery">Bakery &amp; Desserts</button>
+                    <button type="button" class="filter-btn js-gallery-filter" data-filter="interior">Cafe Interior</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <figure class="gallery-item" data-category="coffee" tabindex="0" role="button" aria-label="View Espresso Shot in lightbox">
+                        <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=800&q=80" alt="Freshly extracted Espresso shot with rich crema">
+                        <figcaption class="gallery-caption">
+                            <h3>Signature Espresso (Rs. 250)</h3>
+                            <p>Pulled under 9 bars of pressure with velvety hazelnut crema.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-category="coffee" tabindex="0" role="button" aria-label="View Cappuccino Microfoam in lightbox">
+                        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80" alt="Cappuccino cup topped with frothy milk foam">
+                        <figcaption class="gallery-caption">
+                            <h3>Classic Cappuccino (Rs. 350)</h3>
+                            <p>Balanced espresso and dense steamed microfoam in a warm ceramic cup.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-category="coffee" tabindex="0" role="button" aria-label="View Cafe Latte Art in lightbox">
+                        <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=800&q=80" alt="Cafe Latte with hand-poured rosetta art">
+                        <figcaption class="gallery-caption">
+                            <h3>Artisan Cafe Latte (Rs. 300)</h3>
+                            <p>Silky steamed milk poured over rich espresso with delicate rosetta art.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-category="tea" tabindex="0" role="button" aria-label="View Traditional Milk Tea in lightbox">
+                        <img src="https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?auto=format&fit=crop&w=800&q=80" alt="Warm cup of traditional Milk Tea">
+                        <figcaption class="gallery-caption">
+                            <h3>Traditional Milk Tea (Rs. 150)</h3>
+                            <p>Slow-simmered black tea leaves with fresh milk for daily comfort.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-category="tea" tabindex="0" role="button" aria-label="View Green Tea Infusion in lightbox">
+                        <img src="https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?auto=format&fit=crop&w=800&q=80" alt="Steaming glass cup of Green Tea">
+                        <figcaption class="gallery-caption">
+                            <h3>Whole-Leaf Green Tea (Rs. 180)</h3>
+                            <p>Steeped at 80&deg;C for a clean, aromatic, soothing herbal profile.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-category="bakery" tabindex="0" role="button" aria-label="View Golden Butter Croissants in lightbox">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Freshly baked golden butter croissants">
+                        <figcaption class="gallery-caption">
+                            <h3>Morning Butter Croissants</h3>
+                            <p>Flaky laminated pastry baked fresh each morning to pair with coffee.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-category="bakery" tabindex="0" role="button" aria-label="View Chocolate Fudge Brownie in lightbox">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Rich dark chocolate fudge brownies">
+                        <figcaption class="gallery-caption">
+                            <h3>Dark Chocolate Fudge Brownie</h3>
+                            <p>Rich cocoa square with toasted walnuts, ideal alongside an Espresso.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-category="interior" tabindex="0" role="button" aria-label="View Main Cafe Seating Area in lightbox">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Wooden tables and warm lighting inside My Cafe">
+                        <figcaption class="gallery-caption">
+                            <h3>Warm Wooden Seating Hall</h3>
+                            <p>Natural light, earth-toned finishes, and welcoming tables for guests.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item" data-category="interior" tabindex="0" role="button" aria-label="View Study Corner Nook in lightbox">
+                        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80" alt="Quiet study table with coffee cup and notebook">
+                        <figcaption class="gallery-caption">
+                            <h3>Quiet Study &amp; Reading Nook</h3>
+                            <p>Calm corner seating designed for focused study and unhurried reading.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <div id="galleryLightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightboxTitle">
+            <div class="lightbox-content">
+                <button type="button" id="lightboxClose" class="lightbox-close" aria-label="Close image preview">&times; Close</button>
+                <img id="lightboxImg" src="" alt="">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDesc"></p>
+                <div class="lightbox-nav">
+                    <button type="button" id="lightboxPrev" class="btn-outline">&larr; Previous</button>
+                    <button type="button" id="lightboxNext" class="btn-outline">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>&#9749; My Cafe</h3>
+                <p>Warmth in every cup. Built upon our original Lab 11 foundation with classic beige, brown, and dark green heritage styling.</p>
+                <button type="button" class="btn-green js-welcome-alert">Cafe Greeting</button>
+            </div>
+            <div>
+                <h3>Explore Pages</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Full Menu &amp; Prices</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                    <li><a href="about.html">About &amp; Brand Story</a></li>
+                    <li><a href="coffee.html">Coffee Craft &amp; Guide</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Visit &amp; Community</h3>
+                <ul>
+                    <li><a href="experience.html">Cafe Experience</a></li>
+                    <li><a href="events.html">Sample Workshops &amp; Events</a></li>
+                    <li><a href="reservation.html">Table Reservations</a></li>
+                    <li><a href="contact.html">Contact &amp; Hours</a></li>
+                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Academic Project Info</h3>
+                <p><strong>Student:</strong> Anas Shahid</p>
+                <p><strong>Roll No:</strong> 26i-3113 | <strong>Section:</strong> E</p>
+                <p><strong>Course Lab 12:</strong> Git, GitHub, Vibe Coding &amp; Deployment</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 My Cafe — Academic Web Project by Anas Shahid (26i-3113, Section E). All sample prices, events, and testimonials are clearly labeled as illustrative.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

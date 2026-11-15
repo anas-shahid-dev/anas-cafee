@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find answers to common questions about My Cafe's menu, pricing, seating, reservations, and project architecture.">
+    <title>Frequently Asked Questions | My Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo" aria-label="My Cafe Home">
+                <span>&#9749; My Cafe<span class="brand-sub">Artisan Coffee &amp; Tea House</span></span>
+            </a>
+            <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">&#9776; Menu</button>
+            <nav aria-label="Primary Navigation">
+                <ul id="navMenu" class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coffee.html">Coffee Guide</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html" class="active" aria-current="page">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero-subpage">
+            <div class="container">
+                <span class="badge-pill">Answers &amp; Practical Info</span>
+                <h1>Frequently Asked Questions</h1>
+                <p>Search questions or click any topic below to expand detailed answers about our menu, study spaces, reservations, and project scope.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container" style="max-width: 860px;">
+                <div class="controls-bar">
+                    <div class="search-box-wrap">
+                        <label for="faqSearch" class="skip-link">Search FAQs</label>
+                        <input type="search" id="faqSearch" class="search-input" placeholder="Search FAQs (e.g., Espresso, Wi-Fi, prices, reservation, tea)...">
+                    </div>
+                </div>
+
+                <div id="faqNoResults" class="notice-box" style="display: none; text-align: center;">
+                    <strong>No matching questions found.</strong> Try another keyword such as "menu", "coffee", or "table".
+                </div>
+
+                <h2>Menu &amp; Beverages</h2>
+                <div class="accordion-item">
+                    <button type="button" class="accordion-trigger" aria-expanded="false">
+                        <span>Which menu items are from the original Lab 11 My Cafe website?</span>
+                        <span class="acc-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <p>All six original Lab 11 beverages and their exact prices are preserved: <strong>Espresso (Rs. 250)</strong>, <strong>Cappuccino (Rs. 350)</strong>, <strong>Latte (Rs. 300)</strong>, <strong>Milk Tea (Rs. 150)</strong>, <strong>Green Tea (Rs. 180)</strong>, and <strong>Black Tea (Rs. 120)</strong>. Additional cold drinks, specialty coffees, and bakery items are clearly marked as illustrative sample additions.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button type="button" class="accordion-trigger" aria-expanded="false">
+                        <span>What is the difference between a Cappuccino and a Latte at My Cafe?</span>
+                        <span class="acc-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <p>Our <strong>Cappuccino (Rs. 350)</strong> features equal thirds of espresso, steamed milk, and thick, airy microfoam for a stronger coffee punch. Our <strong>Latte (Rs. 300)</strong> uses a higher proportion of silky steamed milk with a thin layer of foam, creating a milder, creamier cup.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button type="button" class="accordion-trigger" aria-expanded="false">
+                        <span>Do you offer non-caffeinated or herbal beverage options?</span>
+                        <span class="acc-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <p>Yes. Alongside low-caffeine Green Tea (Rs. 180), our illustrative Cold Drinks and Specialty menus include Fresh Mint Lemonade (Rs. 220) and Belgian Spiced Hot Chocolate (Rs. 380).</p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 32px;">Seating, Study &amp; Reservations</h2>
+                <div class="accordion-item">
+                    <button type="button" class="accordion-trigger" aria-expanded="false">
+                        <span>Is My Cafe suitable for studying or working on a laptop?</span>
+                        <span class="acc-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <p>Yes. Our perimeter seating zone is designed specifically for reading, coding, and quiet study with warm lighting, comfortable wooden seating, and power outlet access.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button type="button" class="accordion-trigger" aria-expanded="false">
+                        <span>How does the online table reservation form work?</span>
+                        <span class="acc-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <p>Visit our <a href="reservation.html">Reservations page</a> and enter your name, email, phone number, party size, date, and preferred time. Built-in vanilla JavaScript validates every field and displays an immediate demonstration confirmation on screen.</p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 32px;">Technical &amp; Academic Project Details</h2>
+                <div class="accordion-item">
+                    <button type="button" class="accordion-trigger" aria-expanded="false">
+                        <span>How was this website built and hosted?</span>
+                        <span class="acc-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <p>This ten-page website was built by <strong>Anas Shahid (Roll No. 26i-3113, Section E)</strong> using pure semantic HTML5, responsive CSS3 (one shared <code>style.css</code>), and vanilla JavaScript (one shared <code>script.js</code>) with zero external frameworks, ensuring fast static deployment on GitHub Pages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>&#9749; My Cafe</h3>
+                <p>Warmth in every cup. Built upon our original Lab 11 foundation with classic beige, brown, and dark green heritage styling.</p>
+                <button type="button" class="btn-green js-welcome-alert">Cafe Greeting</button>
+            </div>
+            <div>
+                <h3>Explore Pages</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Full Menu &amp; Prices</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                    <li><a href="about.html">About &amp; Brand Story</a></li>
+                    <li><a href="coffee.html">Coffee Craft &amp; Guide</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Visit &amp; Community</h3>
+                <ul>
+                    <li><a href="experience.html">Cafe Experience</a></li>
+                    <li><a href="events.html">Sample Workshops &amp; Events</a></li>
+                    <li><a href="reservation.html">Table Reservations</a></li>
+                    <li><a href="contact.html">Contact &amp; Hours</a></li>
+                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Academic Project Info</h3>
+                <p><strong>Student:</strong> Anas Shahid</p>
+                <p><strong>Roll No:</strong> 26i-3113 | <strong>Section:</strong> E</p>
+                <p><strong>Course Lab 12:</strong> Git, GitHub, Vibe Coding &amp; Deployment</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 My Cafe — Academic Web Project by Anas Shahid (26i-3113, Section E). All sample prices, events, and testimonials are clearly labeled as illustrative.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

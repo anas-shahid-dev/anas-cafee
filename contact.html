@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact My Cafe, check illustrative operating hours, and send a validated demonstration message.">
+    <title>Contact & Hours | My Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo" aria-label="My Cafe Home">
+                <span>&#9749; My Cafe<span class="brand-sub">Artisan Coffee &amp; Tea House</span></span>
+            </a>
+            <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">&#9776; Menu</button>
+            <nav aria-label="Primary Navigation">
+                <ul id="navMenu" class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coffee.html">Coffee Guide</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero-subpage">
+            <div class="container">
+                <span class="badge-pill">Get in Touch &amp; Visiting Hours</span>
+                <h1>Contact My Cafe</h1>
+                <p>Questions about our menu, sample workshops, or group seating? Send us a message or review our illustrative operating schedule below.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="notice-box">
+                    <strong>Placeholder Information Notice:</strong> In compliance with project integrity guidelines, no real street address, phone number, or commercial email has been invented. All contact fields and hours below are clearly marked as academic placeholders.
+                </div>
+
+                <div class="grid-2">
+                    <div>
+                        <h2>Illustrative Operating Hours</h2>
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Day of Week</th>
+                                        <th>Sample Hours</th>
+                                        <th>Service Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Monday – Thursday</td>
+                                        <td>8:00 AM – 10:00 PM</td>
+                                        <td>Full espresso, tea &amp; study hall hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Friday</td>
+                                        <td>8:00 AM – 11:00 PM</td>
+                                        <td>Extended evening coffee &amp; reading hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday</td>
+                                        <td>9:00 AM – 11:00 PM</td>
+                                        <td>Weekend brunch pastries &amp; sample workshops</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday</td>
+                                        <td>9:00 AM – 9:30 PM</td>
+                                        <td>Relaxed Sunday tea &amp; coffee service</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="card" style="margin-top: 20px;">
+                            <h3>Visit &amp; Project Reference Details</h3>
+                            <p><strong>Location:</strong> [Placeholder Campus / Neighborhood Cafe Location — Academic Project]</p>
+                            <p><strong>General Enquiries:</strong> [Placeholder Email — Submitted via Contact Form]</p>
+                            <p><strong>Telephone:</strong> [Placeholder Phone — Not a Live Business Line]</p>
+                            <p><strong>Project Author:</strong> Anas Shahid (Roll No. 26i-3113, Section E)</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="form-card" style="margin: 0;">
+                            <h2>Send Us a Message</h2>
+                            <p>All fields marked with * are required.</p>
+                            <form id="contactForm" novalidate>
+                                <div class="form-group">
+                                    <label for="contactName">Your Name *</label>
+                                    <input type="text" id="contactName" name="contactName" placeholder="Enter your full name" required>
+                                    <span id="errContactName" class="error-msg">Please enter your name (minimum 2 characters).</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactEmail">Your Email *</label>
+                                    <input type="email" id="contactEmail" name="contactEmail" placeholder="name@example.com" required>
+                                    <span id="errContactEmail" class="error-msg">Please provide a valid email address.</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactSubject">Subject *</label>
+                                    <input type="text" id="contactSubject" name="contactSubject" placeholder="e.g., Menu Question, Group Visit, Feedback" required>
+                                    <span id="errContactSubject" class="error-msg">Please enter a subject (minimum 3 characters).</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactMessage">Message *</label>
+                                    <textarea id="contactMessage" name="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
+                                    <span id="errContactMessage" class="error-msg">Please enter a message of at least 10 characters.</span>
+                                </div>
+
+                                <button type="submit" class="btn btn-green">Send Demonstration Message</button>
+                            </form>
+
+                            <div id="contactConfirmation" class="form-feedback" role="status" aria-live="polite"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>&#9749; My Cafe</h3>
+                <p>Warmth in every cup. Built upon our original Lab 11 foundation with classic beige, brown, and dark green heritage styling.</p>
+                <button type="button" class="btn-green js-welcome-alert">Cafe Greeting</button>
+            </div>
+            <div>
+                <h3>Explore Pages</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Full Menu &amp; Prices</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                    <li><a href="about.html">About &amp; Brand Story</a></li>
+                    <li><a href="coffee.html">Coffee Craft &amp; Guide</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Visit &amp; Community</h3>
+                <ul>
+                    <li><a href="experience.html">Cafe Experience</a></li>
+                    <li><a href="events.html">Sample Workshops &amp; Events</a></li>
+                    <li><a href="reservation.html">Table Reservations</a></li>
+                    <li><a href="contact.html">Contact &amp; Hours</a></li>
+                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Academic Project Info</h3>
+                <p><strong>Student:</strong> Anas Shahid</p>
+                <p><strong>Roll No:</strong> 26i-3113 | <strong>Section:</strong> E</p>
+                <p><strong>Course Lab 12:</strong> Git, GitHub, Vibe Coding &amp; Deployment</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 My Cafe — Academic Web Project by Anas Shahid (26i-3113, Section E). All sample prices, events, and testimonials are clearly labeled as illustrative.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

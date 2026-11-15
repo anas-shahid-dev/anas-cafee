@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit a table reservation enquiry at My Cafe with interactive JavaScript validation and instant confirmation.">
+    <title>Table Reservations | My Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo" aria-label="My Cafe Home">
+                <span>&#9749; My Cafe<span class="brand-sub">Artisan Coffee &amp; Tea House</span></span>
+            </a>
+            <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">&#9776; Menu</button>
+            <nav aria-label="Primary Navigation">
+                <ul id="navMenu" class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coffee.html">Coffee Guide</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reservation.html" class="active" aria-current="page">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero-subpage">
+            <div class="container">
+                <span class="badge-pill">Table &amp; Group Booking</span>
+                <h1>Reserve a Table at My Cafe</h1>
+                <p>Plan a quiet study session, coffee catch-up, or small group table using our validated reservation enquiry form.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="notice-box" style="max-width: 720px; margin: 0 auto 24px auto;">
+                    <strong>Frontend Demonstration Notice:</strong> This reservation form performs full client-side JavaScript validation and generates an instant on-screen demonstration confirmation. No external backend or live booking database is connected.
+                </div>
+
+                <div class="form-card">
+                    <h2>Table Reservation Enquiry Form</h2>
+                    <p>Fields marked with * are required.</p>
+
+                    <form id="reservationForm" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="resName">Full Name *</label>
+                                <input type="text" id="resName" name="resName" placeholder="e.g., Anas Shahid" required>
+                                <span id="errResName" class="error-msg">Please enter your full name (at least 2 characters).</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="resEmail">Email Address *</label>
+                                <input type="email" id="resEmail" name="resEmail" placeholder="e.g., guest@example.com" required>
+                                <span id="errResEmail" class="error-msg">Please enter a valid email address.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="resPhone">Phone Number *</label>
+                                <input type="tel" id="resPhone" name="resPhone" placeholder="e.g., 0300-0000000" required>
+                                <span id="errResPhone" class="error-msg">Please enter a valid phone number (at least 7 digits).</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="resGuests">Number of Guests (1–20) *</label>
+                                <input type="number" id="resGuests" name="resGuests" min="1" max="20" value="2" required>
+                                <span id="errResGuests" class="error-msg">Please enter a party size between 1 and 20 guests.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="resDate">Preferred Date *</label>
+                                <input type="date" id="resDate" name="resDate" required>
+                                <span id="errResDate" class="error-msg">Please choose a reservation date.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="resTime">Preferred Time *</label>
+                                <input type="time" id="resTime" name="resTime" required>
+                                <span id="errResTime" class="error-msg">Please select a preferred arrival time.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="resMessage">Seating Preference or Special Notes</label>
+                            <textarea id="resMessage" name="resMessage" rows="4" placeholder="Let us know if you prefer the quiet study zone, power outlet access, or booth seating..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Submit Reservation Enquiry</button>
+                    </form>
+
+                    <div id="reservationConfirmation" class="form-feedback" role="status" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>&#9749; My Cafe</h3>
+                <p>Warmth in every cup. Built upon our original Lab 11 foundation with classic beige, brown, and dark green heritage styling.</p>
+                <button type="button" class="btn-green js-welcome-alert">Cafe Greeting</button>
+            </div>
+            <div>
+                <h3>Explore Pages</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Full Menu &amp; Prices</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                    <li><a href="about.html">About &amp; Brand Story</a></li>
+                    <li><a href="coffee.html">Coffee Craft &amp; Guide</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Visit &amp; Community</h3>
+                <ul>
+                    <li><a href="experience.html">Cafe Experience</a></li>
+                    <li><a href="events.html">Sample Workshops &amp; Events</a></li>
+                    <li><a href="reservation.html">Table Reservations</a></li>
+                    <li><a href="contact.html">Contact &amp; Hours</a></li>
+                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Academic Project Info</h3>
+                <p><strong>Student:</strong> Anas Shahid</p>
+                <p><strong>Roll No:</strong> 26i-3113 | <strong>Section:</strong> E</p>
+                <p><strong>Course Lab 12:</strong> Git, GitHub, Vibe Coding &amp; Deployment</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 My Cafe — Academic Web Project by Anas Shahid (26i-3113, Section E). All sample prices, events, and testimonials are clearly labeled as illustrative.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
